@@ -1,0 +1,21 @@
+{% extends "in_business/index.html" %}
+{% block title %}
+    <h1>Pagina Principal</h1>
+{% endblock %}
+
+{% block lista_usu %}
+<h1>Lista Usuarios: </h1>
+    {{ lista_usu|safe }}
+{% endblock %}
+
+{% block Filtros %}
+    {{ filtro|safe}}
+{% endblock %}
+
+{% block content %}
+<h1>Listado:</h1>
+    {{ content|safe }}
+{% endblock %}
+
+{% block formularios %}
+{% endblock %}

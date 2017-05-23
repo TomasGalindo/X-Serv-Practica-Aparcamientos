@@ -1,0 +1,84 @@
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Aparc</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="css/styl.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style1 {color: #A53512}
+-->
+</style>
+<link rel="shortcut icon" type="image/png" href="http://www.brussels-expo.com/assets/img/PLogo-315ff917ad.jpg"/>
+</head>
+<body>
+<!--
+
+COPYRIGHT INFORMATION
+-+-+-+-+-+-+-+-+-+-+-
+
+If you wish to use this template for a non-profit organisation,
+such as state funded schools & colleges, charities, blogs etc,
+then you are free to do with the copyright information as you
+wish. I would appreciate a link back, but it isn't neccessary.
+
+For all other users of this template, please leave the copyright
+info in the footer intact. I made this template in my own time,
+and all I ask is you leave the copyright info intact so that
+others can find the oswd site and me!
+
+If you wish to remove the copyright information, I can not stop
+you, but a donation would be appreciated. To get in touch email
+me at info@now-design.co.uk or simply paypal to that same address.
+
+Good luck, if you are struggling with the modification, do get in
+touch as I am available for paid work.
+
+Thanks!
+
+Tjobbe Andrews - NOW:design - info@now-design.co.uk
+
+-->
+<!--
+This design is part of the [in] business template downloaded from the oswd.org site
+
+The stylesheet and template where made by Tjobbe Andrews from NOW:design www.now-design.co.uk
+ -->
+<div class="all">
+	<div class="box">
+<!-- The menu, tabs -->
+	  <div class="menu"><a href="/">home</a><a href="/aparcamientos/">Aparcamientos</a><a href="/about/">about</a></div>
+<!-- The header -->
+		<div class="header"><img alt="" style="float:right; " src="http://www.cfplainmaculada.com/images/djmediatools/19-cabecera-servicios/parking-cabecera.png" width="60%" height="95" />
+		  <h1>{% block title %}{% endblock %}</h1>
+		  <div class="clearfix"></div>
+	  </div>
+<!-- the news bar, or right hand column -->
+		<div class="newsbar">
+
+		<div class="p2"><h1>Login</h1>{{ login_info|safe }}</div>
+
+		  <div class="p2">
+            {% block lista_usu %}{% endblock %}
+	      </div>
+
+		</div>
+<!-- main content area-->
+		<div class="content">
+          <div class="p1">{% block Filtros %}{% endblock %}</div>
+
+		  <p>{% block content %}{% endblock %}</p>
+
+		  <p>{% block formularios %}{% endblock %}</p>
+		</div>
+		<div class="clearfix"></div>
+<!-- footer, copyright area - please do not remove!-->
+		<div class="footer">&copy; 2005, design by <a href="http://www.now-design.co.uk/">NOW:design</a> |
+		  Template from <a href="http://www.oswd.org/">oswd.org</a>| Esta aplicacion utiliza datos del portal de datos abiertos de la ciudad de Madrid <a href="http://datos.munimadrid.es/portal/site/egob/menuitem.ac61933d6ee3c31cae77ae7784f1a5a0/?vgnextoid=00149033f2201410VgnVCM100000171f5a0aRCRD&format=xml&file=0&filename=202584-0-aparcamientos-residentes&mgmtid=e84276ac109d3410VgnVCM2000000c205a0aRCRD&preview=full">enlace</a></div>
+	</div>
+</div>
+
+</body>
+</html>
